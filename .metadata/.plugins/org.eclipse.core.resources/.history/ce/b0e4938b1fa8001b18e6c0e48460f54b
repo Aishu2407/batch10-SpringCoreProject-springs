@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans">
+
+
+
+<bean id="dev" class="com.te.springcorexml.bean.Department">
+
+<property value="200" name="id"/>
+
+<property value="Development" name="dname"/>
+
+</bean>
+
+
+<bean id="hr" class="com.te.springcorexml.bean.Department" primary="false" autowire-candidate="false">
+
+<property value="300" name="id"/>
+
+<property value="HR" name="dname"/>
+
+</bean>
+
+
+<bean id="sales" class="com.te.springcorexml.bean.Department" autowire-candidate="false">
+
+<property value="400" name="id"/>
+
+<property value="Sales" name="dname"/>
+
+</bean>
+
+
+<import resource="Addressbean.xml"/>
+
+<!-- <bean class="com.te.springcorexml.bean.Employee" id="emp" autowire="constructor" ><constructor-arg name="id" value="10" /><constructor-arg name="name" value="Sai" /></bean> -->
+
+
+<!-- <bean class="com.te.springcorexml.bean.Employee" id="emp" autowire="byName"><property name="id" value="20" /><property name="name" value="Barath" /></bean> -->
+
+
+
+<bean autowire="byType" id="add" class="com.te.spring.student.bean.Address">
+
+<property value="karnataka" name="state"/>
+
+<property value="mysore" name="city"/>
+<property value="571101" name="pincode"/>
+
+</bean>
+
+</beans>

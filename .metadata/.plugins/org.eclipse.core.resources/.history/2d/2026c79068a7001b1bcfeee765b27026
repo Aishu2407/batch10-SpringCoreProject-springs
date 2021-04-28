@@ -1,0 +1,18 @@
+package com.te.studentTest;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.te.spring.student.bean.Student;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+		
+		Student stu=(Student) context.getBean("adress");
+		System.out.println(stu.getSid());
+		System.out.println(stu.getSname());
+	}
+
+}

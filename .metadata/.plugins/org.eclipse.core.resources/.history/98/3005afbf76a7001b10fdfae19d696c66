@@ -1,0 +1,22 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:c="http://www.springframework.org/schema/c"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	
+   
+	
+	
+	
+
+<bean scope="prototype" id="emp" class="com.te.springcorexml.bean.Employee"/>
+
+<!-- <bean class="com.te.springcorexml.bean.Employee" id="empOne" >
+<constructor-arg name="id" value="10" /><constructor-arg name="name" value="Sai" />
+</bean><bean class="com.te.springcorexml.bean.Employee" id="empTwo">
+<property name="id" value="20" /><property name="name" value="Barath"></property></bean> -->
+
+
+</beans>

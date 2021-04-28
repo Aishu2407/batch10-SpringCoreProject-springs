@@ -1,0 +1,21 @@
+package com.te.springcore;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.te.springcore.bean.Car;
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context=new ClassPathXmlApplicationContext("CarConfig.xml");
+		
+		Car car=context.getBean("car",Car.class);
+		System.out.println(car.getCompany());
+		System.out.println(car.getEngine().getCc());
+		System.out.println(car.getEngine().getType());
+
+	}
+
+}

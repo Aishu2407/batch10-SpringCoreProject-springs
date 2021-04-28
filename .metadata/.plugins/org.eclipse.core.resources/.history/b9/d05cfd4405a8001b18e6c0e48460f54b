@@ -1,0 +1,5 @@
+package com.te.springcoreannotation.postprocessor;
+
+public class MyBeanFactorypp {
+
+}

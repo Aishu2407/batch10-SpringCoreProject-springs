@@ -1,0 +1,32 @@
+package com.te.studentTest;
+
+
+import java.util.Scanner;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+
+		Employee employee = (Employee) context.getBean("emp");
+		System.out.println("Enter ID");
+		employee.setId(Integer.parseInt(scanner.nextLine()));
+		System.out.println(" enter the name");
+		employee.setName(scanner.nextLine());
+		System.out.println(employee);
+		System.out.println(" ----------------------------");
+		Employee employee1 = (Employee) context.getBean("emp");
+		System.out.println("Enter ID");
+		employee1.setId(Integer.parseInt(scanner.nextLine()));
+		System.out.println(" enter the name");
+		employee1.setName(scanner.nextLine());
+
+		System.out.println(employee1);
+
+		System.out.println(employee);
+	}
+}

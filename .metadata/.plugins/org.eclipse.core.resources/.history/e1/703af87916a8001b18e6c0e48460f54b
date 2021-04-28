@@ -1,0 +1,33 @@
+package com.te.sprincoreannotation.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
+
+import com.te.springcoreannotation.bean.Employee;
+@Configuration
+public class EmployeeConfig {
+	@Bean
+	//@Primary
+	//@Scope("prototype")
+	public Employee getEmployee()
+	{
+		return new Employee();
+	}
+	
+	@Bean
+	@Primary
+public Employee getEmp()
+{
+	return new Employee(100,"raj");
+}
+	
+	public Employee getEmployee2()
+	{
+		Employee employee=new Employee();
+		employee.setId(50);
+		employee.setName("omkar");
+		return employee;
+	}
+}

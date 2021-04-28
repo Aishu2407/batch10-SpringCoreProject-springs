@@ -1,0 +1,11 @@
+package com.te.springcore.xml.Bean;
+
+import java.io.Serializable;
+
+@Da
+public class Employee implements Serializable {
+	
+	private int id;
+	private String name;
+
+}

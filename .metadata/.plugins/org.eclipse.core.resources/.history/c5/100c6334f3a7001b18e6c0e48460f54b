@@ -1,0 +1,5 @@
+package com.te.springcoreannotation.bean;
+
+public class Pet {
+
+}

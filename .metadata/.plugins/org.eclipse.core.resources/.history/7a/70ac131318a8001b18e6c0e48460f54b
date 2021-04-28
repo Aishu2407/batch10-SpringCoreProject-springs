@@ -1,0 +1,23 @@
+package com.te.springcoreannotation.postprocessor;
+
+import java.io.Serializable;
+
+import lombok.Data;
+@Data
+public class MeesageBean implements Serializable {
+
+	public MeesageBean()
+	{
+		System.out.println("instantiation phase");
+	}
+	private String msg;
+	public void init()
+	{
+		System.out.println("my init");
+	}
+	
+	public void destroy()
+	{
+		System.out.println("my destroy");
+	}
+}

@@ -1,0 +1,5 @@
+package com.te.spring.student.bean;
+
+public class Student {
+
+}
