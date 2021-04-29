@@ -26,6 +26,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.te.springHibernate"/>
 			<item value="com.te.springassignment"/>
 			<item value="com.te.Springcorexml"/>
 		</list>
@@ -33,6 +34,7 @@
 			<item value="com.te"/>
 		</list>
 		<list key="artifactId">
+			<item value="springHibernate"/>
 			<item value="springassignment"/>
 			<item value="Springcorexml"/>
 		</list>
